@@ -10,7 +10,6 @@ class UserRegister(Resource):
     parser.add_argument('password', type=str, required=True, help="This field not left blank")
 
     def post(self):
-
         data = UserRegister.parser.parse_args()
 
         # Nutz die Methode um zu schauen, ob der USER schon vorhanden ist
